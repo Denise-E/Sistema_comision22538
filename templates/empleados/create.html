@@ -1,12 +1,27 @@
-<form method="get" action="" enctype="multipart/form-data">
+<form method="post" action="/storage" enctype="multipart/form-data">
+    
+    <div class="card-body">
+        <h5 class="card-title">Registre al nuevo empleado: </h5>
 
-    <label for="">Nombre:</label>
-    <input type="text" name="nombreValue" id="nombreValue">
+        <p class="card-text">
 
-    <label for="">Email:</label>
-    <input type="text" name="emailValue" id="emailValue">
+            <div class="form-group">
+                <label for="">Nombre:</label>
+                <input type="text" name="nombreValue" id="nombreValue">
+            </div>
 
-    <label for="">Imagen:</label>
-    <input type="file" name="fileValue" id="fileValue">
+            <div class="form-group">
+                <label for="">Email:</label>
+                <input type="text" name="emailValue" id="emailValue"> 
+            </div>
+
+            <div class="form-group">
+                <label for="">Imagen:</label>
+                <input type="file" name="fileValue" id="fileValue">
+            </div>
+        </p>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Enviar</button>
 
 </form>

@@ -7,6 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>INDEX</h1>
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Imagen</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for e in empleados %}
+                <tr>
+                    <td>{{e[0]}}</td>
+                    <td>{{e[1]}}</td>
+                    <td>{{e[2]}}</td>
+                    <td>{{e[3]}}</td>
+                    <td>Editar - <a href="/destroy/{{e[0]}}">Borrar</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>
